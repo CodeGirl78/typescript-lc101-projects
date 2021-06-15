@@ -68,4 +68,3 @@ let spaceShuttle = new Spacecraft('Determination', 17500);
 // Paste in the code from step 6 here:
 spaceShuttle.printDaysToLocation(new SpaceLocation('Mars', kilometersToMars));
 spaceShuttle.printDaysToLocation(new SpaceLocation('the Moon', kilometersToTheMoon));
-
