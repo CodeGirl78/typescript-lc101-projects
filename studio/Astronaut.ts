@@ -3,9 +3,9 @@ import { Payload } from './Payload';
 export class Astronaut {
     // properties and methods
     massKg: number;
-    material: string;
-    constructor (massKg: number, material: string) {
+    name: string;
+    constructor (massKg: number, name: string) {
         this.massKg = massKg;
-        this.material = material;
+        this.name = name;
     }
  }
