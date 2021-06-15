@@ -41,6 +41,10 @@ var Spacecraft = /** @class */ (function () {
         var hours = milesAway / this.speedMph;
         return hours / 24;
     };
+    // Add the printDaysToLocation function to the Spacecraft class.
+    Spacecraft.prototype.printDaysToLocation = function (location) {
+        console.log(this.name + " would take " + this.getDaysToLocation(location.kilometersAway) + " days to get to " + location.name + ".");
+    };
     return Spacecraft;
 }());
 // Create an instance of the class here:
@@ -49,11 +53,6 @@ var spaceShuttle = new Spacecraft('Determination', 17500);
 // instance of the class.
 console.log(spaceShuttle.name + " would take " + spaceShuttle.getDaysToLocation(kilometersToMars) + " days to get to Mars");
 console.log(spaceShuttle.name + " would take " + spaceShuttle.getDaysToLocation(kilometersToTheMoon) + " days to get to the Moon.");
-// Add the printDaysToLocation function to the Spacecraft class.
-printDaysToLocation(location, SpaceLocation_1.SpaceLocation);
-{
-    console.log(this.name + " would take " + this.getDaysToLocation(location.kilometersAway) + " days to get to " + location.name + ".");
-}
 // Paste in the code from step 6 here:
 spaceShuttle.printDaysToLocation(new SpaceLocation_1.SpaceLocation('Mars', kilometersToMars));
 spaceShuttle.printDaysToLocation(new SpaceLocation_1.SpaceLocation('the Moon', kilometersToTheMoon));
