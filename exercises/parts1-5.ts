@@ -3,6 +3,7 @@
 
 
 // Part 1: Declare (5) Variables With Type
+// The variables commented out will be moved into the Spacecraft class
 // let spacecraftName: string = "Determination";
 // let speedMph: number = 17500;
 let kilometersToMars: number = 225000000;
@@ -10,14 +11,15 @@ let kilometersToTheMoon: number = 384400;
 // let milesPerKilometer: number = 0.621;
 
 // Part 2: Print Days to Mars
-let milesToMars: number = kilometersToMars * milesPerKilometer;
-let hoursToMars: number = milesToMars / speedMph;
-let daysToMars: number = hoursToMars / 24;
+// let milesToMars: number = kilometersToMars * milesPerKilometer;
+// let hoursToMars: number = milesToMars / speedMph;
+// let daysToMars: number = hoursToMars / 24;
 
 // Code an output statement here (use a template literal):
 // console.log(`${spacecraftName} would take ${daysToMars} to get to Mars`);
 
 // Part 3: Create a Function ("getDaysToLocation"):  Moved to Part 4
+// This function will be moved into the Spacecraft class
 // function getDaysToLocation(kilometersAway: number): number {
 //     let milesAway: number = kilometersAway * milesPerKilometer;
 //     let hours: number = milesAway / speedMph;
